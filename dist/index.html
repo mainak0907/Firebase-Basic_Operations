@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-src 'self' https://apis.google.com/js/api.js?onload=__iframefcb590122;"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase 9</title>
+  </head>
+  <body>
+    <h1>Getting started with firebase 9</h1>
+
+    <form class="add">
+      <label for="Price">Price</label>
+      <input type="text" name="Price" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" required />
+
+      <button>add a new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="id">Document id:</label>
+      <input type="text" name="id" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <h2>Firebase Auth</h2>
+    <div id="error-message1" style="color: red;"></div>
+    <form class="signup">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+    <div id="error-message" style="color: red;"></div>
+    <form class="login">
+      <label for="email">email:</label>
+      <input type="email"name="email">
+      <label for="password">password:</label>
+      <input type="password" name="password">
+      <button>login</button>
+    </form>
+  
+    <button class="logout">logout</button>
+    <button onclick = "googleSignin()">Google Signin</button>
+    <button onclick = "googleSignout()">Google Signout</button>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
